@@ -469,6 +469,36 @@ $('#example').czmChatSupport({
 		/* Representative Settings */
 		persons: [
 
+
+        {
+			avatar: {
+				src: '<i class="fab fa-whatsapp"></i>', /* Image, Icon or SVG */
+				backgroundColor: "#10c379", /* Html color code */
+				onlineCircle: true /* Avatar online circle. To remove, (onlineCircle:false) */
+			},
+			text: {
+				title: "Thedy Pekei", /* Writing is required */
+				description: false,
+				online: false, /* To remove, (online:false) */
+				offline: false /* To remove, (offline:false) */
+			},
+			link: {
+				desktop: "https://web.whatsapp.com/send?phone=6282115151372&text=Hallo%20pengelola%20Basecamp%20Cemara", /* Writing is required */
+                mobile: "https://wa.me/6282115151372/?text=Hallo%20pengelola%20Basecamp%20Cemara" /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
+
+			},
+			onlineDay: {
+				/* Change the day you are offline like this. (sunday:false) */
+				sunday: "00:00-23:59",
+				monday: "00:00-23:59",
+				tuesday: "00:00-23:59",
+				wednesday: "00:00-23:59",
+				thursday: "00:00-23:59",
+				friday: "00:00-23:59",
+				saturday: "00:00-23:59"
+			}
+		},
+
 		/* Copy for more representatives [::Start Copy::] */
 		{
 			avatar: {
@@ -501,34 +531,7 @@ $('#example').czmChatSupport({
 		/* [::End Copy::] */
 
 		/* Copy for more representatives [::Start Copy::] */
-		{
-			avatar: {
-				src: '<i class="fab fa-whatsapp"></i>', /* Image, Icon or SVG */
-				backgroundColor: "#10c379", /* Html color code */
-				onlineCircle: true /* Avatar online circle. To remove, (onlineCircle:false) */
-			},
-			text: {
-				title: "Thedy Pekei", /* Writing is required */
-				description: false,
-				online: false, /* To remove, (online:false) */
-				offline: false /* To remove, (offline:false) */
-			},
-			link: {
-				desktop: "https://web.whatsapp.com/send?phone=6282115151372&text=Hallo%20pengelola%20Basecamp%20Cemara", /* Writing is required */
-                mobile: "https://wa.me/6282115151372/?text=Hallo%20pengelola%20Basecamp%20Cemara" /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
-
-			},
-			onlineDay: {
-				/* Change the day you are offline like this. (sunday:false) */
-				sunday: "00:00-23:59",
-				monday: "00:00-23:59",
-				tuesday: "00:00-23:59",
-				wednesday: "00:00-23:59",
-				thursday: "00:00-23:59",
-				friday: "00:00-23:59",
-				saturday: "00:00-23:59"
-			}
-		},
+		
 		/* [::End Copy::] */
 
 		]
