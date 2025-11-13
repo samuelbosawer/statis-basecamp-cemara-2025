@@ -3459,6 +3459,7 @@ header {
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  color: white;
 }
 .header-horizontal .nav-link > .nav-arrow {
   -webkit-transition: none;
@@ -3527,8 +3528,8 @@ header {
     width: 100%;
     overflow-y: auto;
     z-index: 20;
-    background-color: #fff;
-    color: #45595b !important;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #6e6464 !important;
     text-align: center;
     display: -webkit-box;
     display: -moz-box;
@@ -3540,15 +3541,17 @@ header {
   .header-horizontal .navbar-collapse .navbar-extra,
   .header-horizontal .navbar-collapse .actions-nav,
   .header-horizontal .navbar-collapse .navbar-info-title {
-    color: #747d88 !important;
+    color: #ffb524 !important;
   }
   .header-horizontal .navbar-collapse .navbar-nav > .nav-item:hover > .nav-link,
   .header-horizontal .navbar-collapse .actions-nav > .nav-item:hover > .nav-link {
-    color: #ffb524 !important;
+    color:#ffb524 !important;
   }
   .header-horizontal .navbar-collapse .navbar-info-value {
-    color: #ffb524 !important;
+    color:  #ffb524 !important;
   }
+
+  
   .header-horizontal .navbar-collapse .container {
     padding-top: 5rem;
     padding-bottom: 5rem;
