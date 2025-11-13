@@ -3529,7 +3529,7 @@ header {
     overflow-y: auto;
     z-index: 20;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #6e6464 !important;
+    color: #ffffff !important;
     text-align: center;
     display: -webkit-box;
     display: -moz-box;
@@ -3605,7 +3605,7 @@ header {
     font-size: 1.75rem;
   }
   .header-horizontal.active {
-    color: #45595b !important;
+    color: #ffffff !important;
   }
   .header-horizontal.active .navbar-collapse {
     top: 0;
