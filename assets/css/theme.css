@@ -1498,7 +1498,7 @@ a.disabled {
 /* Sections */
 .section {
   margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 }
 .section-solid {
   padding-top: 8rem;
