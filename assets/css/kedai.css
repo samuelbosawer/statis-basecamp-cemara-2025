@@ -1,0 +1,374 @@
+/* ============================================================
+   Basecamp Cemara — kedai.css
+   Style khusus halaman detail kedai
+   ============================================================ */
+
+/* ======================== SKELETON LOADING ======================== */
+.skeleton-bar {
+  background: linear-gradient(90deg, #eeeeee 25%, #e0e0e0 50%, #eeeeee 75%);
+  background-size: 200% 100%;
+  animation: skeleton-wave 1.4s ease-in-out infinite;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 12px;
+}
+@keyframes skeleton-wave {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ======================== BREADCRUMB ======================== */
+.breadcrumb-bar {
+  background: #f8f9fa;
+  border-bottom: 1px solid #eeeeee;
+}
+.breadcrumb-link {
+  color: #467235;
+  font-weight: 500;
+  font-size: 0.82rem;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.breadcrumb-link:hover { color: #283F24; }
+.breadcrumb-sep { color: #ccc; font-size: 0.6rem; }
+.breadcrumb-current { color: #888; font-size: 0.82rem; }
+
+/* ======================== HERO BANNER ======================== */
+.detail-hero { background: white; }
+
+.detail-hero > div {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.detail-hero-img-wrap {
+  width: 240px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+}
+.detail-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.detail-hero-info { flex: 1; min-width: 0; }
+
+@media (max-width: 640px) {
+  .detail-hero > div { flex-direction: column; gap: 20px; }
+  .detail-hero-img-wrap { width: 100%; border-radius: 14px; }
+}
+
+.detail-hero-info {
+  padding: 20px 0 0;
+}
+.detail-hero-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #283F24;
+  line-height: 1.2;
+  margin: 10px 0 8px;
+}
+@media (max-width: 640px) { .detail-hero-title { font-size: 1.5rem; } }
+
+.detail-hero-tagline {
+  color: #666;
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+
+.detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.detail-tag {
+  background: rgba(70,114,53,0.1);
+  border: 1px solid rgba(70,114,53,0.2);
+  color: #467235;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+}
+
+/* ======================== ABOUT 2-COL ======================== */
+.detail-about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+@media (min-width: 1024px) {
+  .detail-about-grid {
+    grid-template-columns: 1fr 400px;
+    gap: 60px;
+    align-items: start;
+  }
+}
+
+.detail-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #283F24;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.detail-desc-text {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.85;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+.detail-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.detail-wa-btn, .detail-ig-btn { font-size: 0.88rem; }
+
+/* Info card */
+.detail-info-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+.detail-info-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 24px;
+}
+.detail-info-header-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,191,0,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFBF00;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.detail-info-body { padding: 8px 24px 4px; }
+.detail-info-footer { padding: 16px 24px 24px; }
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.info-item-icon { font-size: 0.9rem; margin-top: 3px; flex-shrink: 0; }
+.info-item-label { font-size: 0.7rem; color: #aaa; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+.info-item-value { font-size: 0.85rem; color: #283F24; font-weight: 500; margin-top: 2px; }
+
+/* ======================== MENU TABS (Kopi Acem) ======================== */
+.menu-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.menu-tab-btn {
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 2px solid #e5e5e5;
+  background: white;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+.menu-tab-btn:hover { border-color: #FFBF00; color: #283F24; }
+.menu-tab-btn.active {
+  background: #FFBF00;
+  border-color: #FFBF00;
+  color: #283F24;
+  box-shadow: 0 4px 14px rgba(255,191,0,0.3);
+}
+
+.menu-panels { }
+.menu-panel { display: none; }
+.menu-panel.active { display: block; }
+
+.menu-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 24px 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #283F24;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #eeeeee;
+  border-bottom: none;
+}
+
+/* ======================== MENU PRICE ROWS ======================== */
+.menu-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 24px;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  transition: background 0.2s;
+  gap: 16px;
+}
+.menu-price-row:last-child { border-radius: 0 0 20px 20px; }
+.menu-price-row.even { background: #fafafa; }
+.menu-price-row:hover { background: #fffdf0; }
+.menu-item-name {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+}
+.menu-item-price {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #467235;
+  white-space: nowrap;
+  background: rgba(70,114,53,0.12);
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+/* ======================== MENU LIST (Sabar Samarasta) ======================== */
+.menu-list-wrap {
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ======================== PRODUK GRID (Mae Coffe) ======================== */
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .produk-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+.produk-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  transition: all 0.3s ease;
+}
+.produk-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+}
+.produk-card-img {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+.produk-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.produk-card:hover .produk-card-img img { transform: scale(1.06); }
+.produk-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(40,63,36,0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.produk-card:hover .produk-card-overlay { opacity: 1; }
+.produk-card-body { padding: 14px 16px; }
+.produk-card-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #283F24;
+  margin-bottom: 4px;
+}
+.produk-card-desc {
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+/* ======================== OTHER KEDAI ======================== */
+.other-kedai-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 640px) {
+  .other-kedai-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .other-kedai-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.other-kedai-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  transition: all 0.3s ease;
+  display: block;
+  color: inherit;
+}
+.other-kedai-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.09);
+  color: inherit;
+}
+.other-kedai-img { aspect-ratio: 4/5; overflow: hidden; }
+.other-kedai-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.other-kedai-card:hover .other-kedai-img img { transform: scale(1.05); }
+.other-kedai-body { padding: 18px 20px; }
+.other-kedai-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.other-kedai-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #283F24;
+  margin-bottom: 6px;
+}
+.other-kedai-desc {
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.other-kedai-cta {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #467235;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s;
+}
+.other-kedai-card:hover .other-kedai-cta { gap: 8px; }

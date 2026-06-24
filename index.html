@@ -1,565 +1,987 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Basecamp Cemara</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basecamp Cemara - Ruang Kreatif UMKM & Camping Papua</title>
+  <meta name="description" content="Basecamp Cemara adalah ruang kreatif bagi UMKM lokal Papua, area camping, dan komunitas Rasta Kribo Papua di Sentani, Kabupaten Jayapura." />
+  <meta name="keywords" content="basecamp cemara, UMKM Papua, camping Sentani, Jayapura, Rasta Kribo Papua, kopi Papua, sewa tempat event" />
+  <meta name="author" content="Samuel Bosawer" />
+  <meta name="robots" content="index, follow" />
 
-    <meta property="og:locale" content="id_ID" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Basecamp Cemara" />
-    <meta property="og:description"
-        content="Basecamp Cemara - Tempat UMKM dan Camping - Basecamp Komunitas Rasta Kribo Papua" />
-    <meta property="og:url" content="https://basecampcemara.com/" />
-    <meta property="og:site_name" content="Basecamp Cemara - Tempat UMKM dan Camping" />
-    <meta property="og:image" content="https://basecampcemara.com/assets/images/og-image-basecampcemara.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+  <!-- OG / Social -->
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Basecamp Cemara - Ruang Kreatif UMKM & Camping Papua" />
+  <meta property="og:description" content="Basecamp Cemara - Tempat UMKM dan Camping, Basecamp Komunitas Rasta Kribo Papua di Sentani Jayapura." />
+  <meta property="og:url" content="https://basecampcemara.com/" />
+  <meta property="og:site_name" content="Basecamp Cemara" />
+  <meta property="og:image" content="https://basecampcemara.com/assets/images/og-image-basecampcemara.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Basecamp Cemara" />
+  <meta name="twitter:description" content="Basecamp Cemara - Tempat UMKM dan Camping, Basecamp Komunitas Rasta Kribo Papua." />
+  <meta name="twitter:image" content="https://basecampcemara.com/assets/images/og-image-basecampcemara.jpg" />
 
-    <!-- Tambahan untuk Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Basecamp Cemara" />
-    <meta name="twitter:description"
-        content="Basecamp Cemara - Tempat UMKM dan Camping - Basecamp Komunitas Rasta Kribo Papua" />
-    <meta name="twitter:image" content="https://basecampcemara.com/assets/images/og-image-basecampcemara.jpg" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="assets/images/logo-2.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.png" />
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" href="assets/images/logo-2.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-2.png">
-    <!-- Bootstrap -->
-    <link href="./assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <!-- Animate.css -->
-    <link href="./assets/animate.css/animate.css" rel="stylesheet" type="text/css" />
-    <!-- Font Awesome iconic font -->
-    <link href="./assets/fontawesome/css/all.css" rel="stylesheet" type="text/css" />
-    <!-- Slick carousel -->
-    <link href="./assets/slick/slick.css" rel="stylesheet" type="text/css" />
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"
-        type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"
-        type="text/css">
-    <!-- Theme styles -->
-    <link href="./assets/css/theme.css" rel="stylesheet" type="text/css">
-    <link href="./assets/wa-web/plugin/components/font-awesome/css/fontawesome.min.css" rel="stylesheet">
-    <link href="./assets/wa-web/plugin/czm-chat-support.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
 
+  <!-- TailwindCSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   '#FFBF00',
+            secondary: '#FFF78D',
+            accent:    '#467235',
+            dark:      '#283F24',
+          },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] },
+          borderRadius: { '2xl': '20px', '3xl': '24px' },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body class="body ">
-    <div id="example"></div>
-    <div class="page-loader cube-loader">
-        <div class="loader-wrap">
-            <div class="loader-1 loader-element"></div>
-            <div class="loader-2 loader-element"></div>
-            <div class="loader-4 loader-element"></div>
-            <div class="loader-3 loader-element"></div>
-        </div>
+<body class="font-sans">
+
+  <!-- ==================== PAGE LOADER ==================== -->
+  <div id="page-loader" role="status" aria-label="Memuat halaman">
+    <div class="loader-logo-wrap">
+      <div class="loader-logo-pulse"></div>
+      <div class="loader-ring"></div>
+      <img src="assets/images/logo-3.webp" alt="Basecamp Cemara" style="height:52px;opacity:0.9;" />
     </div>
-    <header class="header-horizontal bg-orange  fixed-top    ">
-        <div class="container p-4 ">
-            <nav class="navbar  "><a class="navbar-brand" href="/"><span class="logo-element-line"><span
-                            class="logo-icon"> <img src="assets/images/logo-3.png" alt="" height="70" srcset=""></a>
-                <button class="navbar-toggler" type="button"><i class="fas fa-bars nav-show"></i><i
-                        class="fas fa-times nav-hide"></i></button>
-                <div class="navbar-collapse">
-                    <div class="container my-auto">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link entity-title " style="hover:Black" href="#beranda"
-                                    >BERANDA</a></li>
-                            <li class="nav-item"><a class="nav-link entity-title" href="#umkm"
-                                    >UMKM</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link entity-title" href="#beranda">PRODUK</a></li> -->
-                            <li class="nav-item"><a class="nav-link entity-title" href="#kontak"
-                                    >KONTAK</a></li>
-                        </ul>
+    <div class="loader-dots">
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+    </div>
+  </div>
 
-                    </div>
-                </div>
-            </nav>
+  <!-- ==================== NAVBAR ==================== -->
+  <header>
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50" style="background:#283F24;" aria-label="Navigasi utama">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between" style="height:72px;">
+
+          <!-- Logo -->
+          <a href="#beranda" class="flex items-center" aria-label="Beranda Basecamp Cemara">
+            <img src="assets/images/logo-3.webp" alt="Basecamp Cemara" style="height:56px;" />
+          </a>
+
+          <!-- Desktop Links -->
+          <div class="hidden md:flex items-center gap-7">
+            <a href="#beranda"  class="nav-link-item text-white text-sm">Beranda</a>
+            <a href="#tentang"  class="nav-link-item text-white text-sm">Tentang</a>
+            <a href="#umkm"     class="nav-link-item text-white text-sm">UMKM</a>
+            <a href="#sewa"     class="nav-link-item text-white text-sm">Sewa Tempat</a>
+            <a href="#galeri"   class="nav-link-item text-white text-sm">Galeri</a>
+            <a href="#kontak"   class="nav-link-item text-white text-sm">Kontak</a>
+          </div>
+
+          <!-- CTA (desktop) -->
+          <a href="https://wa.me/6282115151372/?text=Hallo%20pengelola%20Basecamp%20Cemara"
+             target="_blank" rel="noopener"
+             class="btn-primary hidden md:inline-flex text-sm">
+            <i class="fab fa-whatsapp"></i> Hubungi Kami
+          </a>
+
+          <!-- Hamburger (mobile) -->
+          <button id="hamburger" class="md:hidden text-white p-2 rounded-lg" aria-label="Buka menu" style="background:rgba(255,255,255,0.08);">
+            <i class="fas fa-bars text-lg" id="ham-icon"></i>
+          </button>
         </div>
-    </header>
+      </div>
 
-    <br><br><br>
-    <div id="beranda"></div>
-    <section class="mt-5 section pt-5" style="margin-top: 500px;">
-        <div class="container">
-            <div class="grid row">
-                <div class="col-lg-8 d-flex">
-                    <div class="slick-view-banner slick-numeric-navigation slick-dots-center slick-dots-bottom section-white-text entity-block entity-hover-shadow overflow-hidden slick-carousel"
-                        data-slider="top-with-numbers">
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" aria-hidden="true" style="border-top:1px solid rgba(255,255,255,0.1);">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
+          <a href="#beranda" class="mobile-nav-link text-white/85 text-sm font-medium py-3 px-3 rounded-xl hover:bg-white/10 transition-colors">Beranda</a>
+          <a href="#tentang" class="mobile-nav-link text-white/85 text-sm font-medium py-3 px-3 rounded-xl hover:bg-white/10 transition-colors">Tentang</a>
+          <a href="#umkm"    class="mobile-nav-link text-white/85 text-sm font-medium py-3 px-3 rounded-xl hover:bg-white/10 transition-colors">UMKM</a>
+          <a href="#sewa"    class="mobile-nav-link text-white/85 text-sm font-medium py-3 px-3 rounded-xl hover:bg-white/10 transition-colors">Sewa Tempat</a>
+          <a href="#galeri"  class="mobile-nav-link text-white/85 text-sm font-medium py-3 px-3 rounded-xl hover:bg-white/10 transition-colors">Galeri</a>
+          <a href="#kontak"  class="mobile-nav-link text-white/85 text-sm font-medium py-3 px-3 rounded-xl hover:bg-white/10 transition-colors">Kontak</a>
+          <a href="https://wa.me/6282115151372/?text=Hallo%20pengelola%20Basecamp%20Cemara"
+             target="_blank" rel="noopener"
+             class="btn-primary text-sm justify-center mt-2">
+            <i class="fab fa-whatsapp"></i> Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                        <div class="slick-slides">
-                            <div class="slick-slide">
-                                <div class="entity-banner section-white-text content-offs section-solid with-back">
-                                    <div class="overflow-back cover-image" data-background="assets/images/hero/1.png">
-                                    </div>
-                                    <div class="overflow-back bg-dark-lime-green  opacity-70"></div>
-                                    <div class="container text-center entity-content">
-                                        <div class="my-auto row">
-                                            <div class="col-lg-9 mx-auto">
-                                                <h2 class="h1 entity-title">Ruang Kreatif
-                                                </h2>
-                                                <p class="mb-4 pb-2 entity-text">Ruang kreatif bagi UMKM lokal Papua
-                                                    untuk berkembang bersama
-                                                </p>
-                                                <div class="entity-action-btns"><a
-                                                        class="btn-wide btn btn-theme-white-bordered"
-                                                        href="https://maps.app.goo.gl/h7ZHPDK3P1Twgz686"
-                                                        target="_blank">Lokasi</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+  <main>
 
-                            <div class="slick-slide">
-                                <div class="entity-banner section-white-text content-offs section-solid with-back">
-                                    <div class="overflow-back cover-image" data-background="assets/images/hero/3.png">
-                                    </div>
-                                    <div class="overflow-back bg-dark-lime-green  opacity-70"></div>
-                                    <div class="container text-center entity-content">
-                                        <div class="my-auto row">
-                                            <div class="col-lg-9 mx-auto">
-                                                <h2 class="h1 entity-title">Nikmati Pengalaman Camping
-                                                </h2>
-                                                <p class="mb-4 pb-2 entity-text">Rasakan kebersamaan, keindahan alam,
-                                                    dan semangat persaudaraan di setiap kegiatan camping
-                                                </p>
-                                                <div class="entity-action-btns"><a
-                                                        class="btn-wide btn btn-theme-white-bordered"
-                                                        href="https://maps.app.goo.gl/h7ZHPDK3P1Twgz686"
-                                                        target="_blank">Lokasi</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <!-- ==================== HERO SLIDER ==================== -->
+    <section id="beranda" class="hero-wrapper" aria-label="Hero - Slider utama">
 
-
-                            <div class="slick-slide">
-                                <div class="entity-banner section-white-text content-offs section-solid with-back">
-                                    <div class="overflow-back cover-image" data-background="assets/images/hero/2.png">
-                                    </div>
-                                    <div class="overflow-back bg-dark-lime-green  opacity-70"></div>
-                                    <div class="container text-center entity-content">
-                                        <div class="my-auto row">
-                                            <div class="col-lg-9 mx-auto">
-                                                <h2 class="h1 entity-title">Basecamp Rasta Kribo Papua
-                                                </h2>
-                                                <p class="mb-4 pb-2 entity-text">Wadah komunitas untuk saling
-                                                    menginspirasi, mengembangkan kreativitas, dan memperkuat
-                                                    solidaritas.
-                                                </p>
-                                                <div class="entity-action-btns"><a
-                                                        class="btn-wide btn btn-theme-white-bordered"
-                                                        href="https://maps.app.goo.gl/h7ZHPDK3P1Twgz686"
-                                                        target="_blank">Lokasi</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="slick-container-nav">
-                            <div class="container">
-                                <div class="slick-dots-container"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column col">
-                    <div class="grid row">
-                        <div class="col-sm-6 col-lg-12 d-flex">
-                            <article class="entity-block entity-hover-shadow text-center">
-                                <div class="entity-bg">
-                                    <div class="overflow-back cover-image" data-background="assets/images/news/1.jpg">
-                                    </div>
-                                    <div class="full-block bg-dark opacity-50"></div>
-                                </div>
-                                <div class="pt-5 entity-content">
-                                    <h4 class="text-white h3 mt-auto entity-title">Kunjungan Bapak Bupati Kab. Jayapura
-                                    </h4>
-                                    <div class="mt-auto entity-action-btns"><a class="btn-wide btn btn-theme"
-                                            target="_blank"
-                                            href="https://www.instagram.com/p/DJBahf1PWbb/?img_index=1">Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <div class="block-sizer mh-360">
-                                <div class="embed-responsive embed-responsive-1by1"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-12 d-flex">
-                            <article class="entity-block entity-hover-shadow text-center">
-                                <div class="entity-bg">
-                                    <div class="overflow-back cover-image" data-background="assets/images/news/2.jpg">
-                                    </div>
-                                    <div class="full-block bg-dark opacity-50"></div>
-                                </div>
-                                <div class="pt-5 entity-content">
-                                    <h4 class="text-white h3 mt-auto entity-title">Si Montok Vespa di Cemara</h4>
-                                    <div class="mt-auto entity-action-btns"><a class="btn-wide btn btn-theme"
-                                            target="_blank"
-                                            href="https://www.instagram.com/p/DOAkTXNjxVr">Selengkapnya</a></div>
-                                </div>
-                            </article>
-                            <div class="block-sizer mh-360">
-                                <div class="embed-responsive embed-responsive-1by1"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Slide 1: Ruang Kreatif -->
+      <div class="hero-slide active" style="background-image:url('assets/images/hero/1.webp');" role="img" aria-label="Ruang Kreatif UMKM">
+        <div class="hero-content">
+          <div class="max-w-3xl mx-auto">
+            <div class="hero-badge"><i class="fas fa-star" style="font-size:0.6rem;"></i> Basecamp Komunitas Rasta Kribo Papua</div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-5">
+              Ruang Kreatif<br>
+              <span style="color:#FFBF00;">UMKM Lokal Papua</span>
+            </h1>
+            <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+              Ruang berkembang bagi pelaku UMKM lokal Papua - bersama dalam semangat kebersamaan dan inovasi.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="#umkm"    class="btn-primary text-base"><i class="fas fa-store"></i> Lihat UMKM</a>
+              <a href="https://maps.app.goo.gl/h7ZHPDK3P1Twgz686" target="_blank" rel="noopener" class="btn-outline-white text-base"><i class="fas fa-map-marker-alt"></i> Lokasi Kami</a>
             </div>
+          
+          </div>
         </div>
-    </section>
-    <section id="umkm"
-        class="white-curve-before curve-before-60 white-curve-after curve-after-80 section-solid with-back section-white-text">
-        <div class="overflow-back cover-image" data-background="http://via.placeholder.com/1920x1080"></div>
-        <div class="overflow-back bg-dark-lime-green opacity-50"></div>
-        <div class="section-head">
-            <!-- <div class="section-icon"><span class="svg-fill-white svg-content" data-svg="./assets/images/svg/title-avocado.svg"></span></div> -->
-            <div class="section-head-content">
-                <h2 class="display-1">UMKM</h2>
-                <p class="section-text">Daftar UMKM yang berjualan di Basecamp Cemara</p>
+      </div>
+
+      <!-- Slide 2: Camping -->
+      <div class="hero-slide" style="background-image:url('assets/images/hero/3.webp');" role="img" aria-label="Area Camping">
+        <div class="hero-content">
+          <div class="max-w-3xl mx-auto">
+            <div class="hero-badge"><i class="fas fa-campground" style="font-size:0.6rem;"></i> Area Camping</div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-5">
+              Nikmati Pengalaman<br>
+              <span style="color:#FFBF00;">Camping Pinggiran Danau Sentani</span>
+            </h1>
+            <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+              Rasakan kebersamaan, keindahan Danau Sentani, dan semangat persaudaraan di setiap kegiatan camping bersama komunitas.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="#sewa"    class="btn-primary text-base"><i class="fas fa-calendar-alt"></i> Booking Sekarang</a>
+              <a href="https://maps.app.goo.gl/h7ZHPDK3P1Twgz686" target="_blank" rel="noopener" class="btn-outline-white text-base"><i class="fas fa-map-marker-alt"></i> Lokasi Kami</a>
             </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="grid justify-content-center row">
+      </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <article class="entity-block entity-hover-shadow"><a class="entity-preview-show-up entity-preview"
-                            href="sabar-samarasta.html"><span class="embed-responsive embed-responsive-4by3"><img
-                                    class="embed-responsive-item" src="assets/images/sabar-samarasta.png"
-                                    alt="" /></span><span class="with-back entity-preview-content"><span
-                                    class="overflow-back bg-body-back opacity-70"></span><span
-                                    class="m-auto h1 text-theme text-center"><i
-                                        class="fas fa-eye"></i></span></span></a>
-                        <div class="fill-color-line" data-role="fill-line">
-                            <div class="opacity-30 fill-line-segment bg-theme" data-role="fill-line-segment"
-                                data-min-width="10" data-preffered-width="50" data-max-width="80"></div>
-                            <div class="opacity-60 fill-line-segment bg-theme" data-role="fill-line-segment"
-                                data-min-width="10" data-preffered-width="50" data-max-width="80"></div>
-                            <div class="fill-line-segment bg-theme" data-role="fill-line-segment" data-min-width="10"
-                                data-preffered-width="50" data-max-width="80"></div>
-                        </div>
-                        <div class="entity-content">
-                            <h4 class=" text-center"><a class="content-link" href="sabar-samarasta.html">Sabar
-                                    Samarasta</a>
-                            </h4>
-                            <p class="text-center my-2">Kami menjual sagu bakar dan jajanan olahan sagu khas Papua
-                                lezat.
-                            </p>
-                            <div class="d-flex justify-content-between">
-
-                                <div class="entity-action-btns"><a class="btn-sm btn btn-success"
-                                        href="https://wa.me/6282115151372/?text=Hallo%20pengelola%20Sabar%20Samarasta"
-                                        target="_blank">Whatsapp</a>
-                                </div>
-                                <div class="entity-action-btns"><a class="btn-sm btn btn-theme"
-                                        href="sabar-samarasta.html">Detail</a></div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <article class="entity-block entity-hover-shadow"><a class="entity-preview-show-up entity-preview"
-                            href="kopi-acem.html"><span class="embed-responsive embed-responsive-4by3"><img
-                                    class="embed-responsive-item" src="assets/images/kopi-acem.png"
-                                    alt="" /></span><span class="with-back entity-preview-content"><span
-                                    class="overflow-back bg-body-back opacity-70"></span><span
-                                    class="m-auto h1 text-theme text-center"><i
-                                        class="fas fa-eye"></i></span></span></a>
-                        <div class="fill-color-line" data-role="fill-line">
-                            <div class="opacity-30 fill-line-segment bg-theme" data-role="fill-line-segment"
-                                data-min-width="10" data-preffered-width="50" data-max-width="80"></div>
-                            <div class="opacity-60 fill-line-segment bg-theme" data-role="fill-line-segment"
-                                data-min-width="10" data-preffered-width="50" data-max-width="80"></div>
-                            <div class="fill-line-segment bg-theme" data-role="fill-line-segment" data-min-width="10"
-                                data-preffered-width="50" data-max-width="80"></div>
-                        </div>
-                        <div class="entity-content">
-                            <h4 class=" text-center"><a class="content-link" href="kopi-acem.html">Kopi Acem</a></h4>
-                            <p class="text-center my-2">Kami menjual kopi asli Papua yang diolah dengan cinta sambil menikmati indahnya Danau Sentani.
-                            </p>
-                            <div class="d-flex justify-content-between">
-
-                                <div class="entity-action-btns"><a class="btn-sm btn btn-success"
-                                        href="https://wa.me/6281344552766/?text=Hallo%20pengelola%20Kopi%20Acem"
-                                        target="_blank">Whatsapp</a>
-                                </div>
-                                <div class="entity-action-btns"><a class="btn-sm btn btn-theme"
-                                        href="kopi-acem.html">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <article class="entity-block entity-hover-shadow"><a class="entity-preview-show-up entity-preview"
-                            href="mae-coffe.html"><span class="embed-responsive embed-responsive-4by3"><img
-                                    class="embed-responsive-item" src="assets/images/mae-coffe.png"
-                                    alt="" /></span><span class="with-back entity-preview-content"><span
-                                    class="overflow-back bg-body-back opacity-70"></span><span
-                                    class="m-auto h1 text-theme text-center"><i
-                                        class="fas fa-eye"></i></span></span></a>
-                        <div class="fill-color-line" data-role="fill-line">
-                            <div class="opacity-30 fill-line-segment bg-theme" data-role="fill-line-segment"
-                                data-min-width="10" data-preffered-width="50" data-max-width="80"></div>
-                            <div class="opacity-60 fill-line-segment bg-theme" data-role="fill-line-segment"
-                                data-min-width="10" data-preffered-width="50" data-max-width="80"></div>
-                            <div class="fill-line-segment bg-theme" data-role="fill-line-segment" data-min-width="10"
-                                data-preffered-width="50" data-max-width="80"></div>
-                        </div>
-                        <div class="entity-content">
-                            <h4 class=" text-center"><a class="content-link" href="mae-coffe.html">Mae Coffe</a></h4>
-                            <p class="text-center my-2">Kami menjual kopi spesial dan minuman kekinian dengan cita rasa
-                                unik menggugah selera.
-                            </p>
-                            <div class="d-flex justify-content-between">
-
-                                <div class="entity-action-btns"><a class="btn-sm btn btn-success" href="#!">Whatsapp</a>
-                                </div>
-                                <div class="entity-action-btns"><a class="btn-sm btn btn-theme"
-                                        href="mae-coffe.html">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-
-
-
+      <!-- Slide 3: Komunitas -->
+      <div class="hero-slide" style="background-image:url('assets/images/hero/2.webp');" role="img" aria-label="Komunitas Rasta Kribo Papua">
+        <div class="hero-content">
+          <div class="max-w-3xl mx-auto">
+            <div class="hero-badge"><i class="fas fa-heart" style="font-size:0.6rem;"></i> Komunitas Papua</div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-5">
+              Basecamp<br>
+              <span style="color:#FFBF00;">Rasta Kribo Papua</span>
+            </h1>
+            <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+              Wadah komunitas untuk saling menginspirasi, mengembangkan kreativitas, dan memperkuat solidaritas tanah Papua.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="#tentang" class="btn-primary text-base"><i class="fas fa-info-circle"></i> Tentang Kami</a>
+              <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="btn-outline-white text-base"><i class="fab fa-instagram"></i> Instagram</a>
             </div>
+          </div>
         </div>
+      </div>
 
+      <!-- Slide 4 (NEW): Sewa Tempat Event -->
+      <div class="hero-slide rental-slide" style="background-image:url('assets/images/hero/1.webp');" role="img" aria-label="Sewa Tempat Event">
+        <div class="hero-content">
+          <div class="max-w-3xl mx-auto">
+            <div class="hero-badge"><i class="fas fa-calendar-check" style="font-size:0.6rem;"></i> Sewa Tempat Event</div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-5">
+              Gelar Event Berkesan<br>
+              <span style="color:#FFBF00;">Dekat Danau Sentani</span>
+            </h1>
+            <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+              Tersedia tempat luas dan strategis untuk seminar, workshop, gathering komunitas, pesta adat, dan festival budaya Papua.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="#sewa"    class="btn-primary text-base"><i class="fas fa-calendar-alt"></i> Cek Ketersediaan</a>
+              <a href="https://wa.me/6282115151372/?text=Hallo%20saya%20ingin%20sewa%20tempat%20event%20di%20Basecamp%20Cemara" target="_blank" rel="noopener" class="btn-outline-white text-base"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 (NEW): Sewa Lapak UMKM -->
+      <div class="hero-slide rental-slide" style="background-image:url('assets/images/hero/2.webp');" role="img" aria-label="Sewa Lapak UMKM">
+        <div class="hero-content">
+          <div class="max-w-3xl mx-auto">
+            <div class="hero-badge"><i class="fas fa-shop" style="font-size:0.6rem;"></i> Sewa Lapak UMKM</div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-5">
+              Kembangkan Usaha Anda<br>
+              <span style="color:#FFBF00;">Bersama Kami</span>
+            </h1>
+            <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+              Lapak usaha terjangkau untuk pelaku UMKM lokal Papua. Bergabunglah dan jadikan produk lokal Papua semakin dikenal luas.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="#sewa"    class="btn-primary text-base"><i class="fas fa-store"></i> Daftar Lapak</a>
+              <a href="https://wa.me/6282115151372/?text=Hallo%20saya%20ingin%20mendaftar%20sebagai%20UMKM%20di%20Basecamp%20Cemara" target="_blank" rel="noopener" class="btn-outline-white text-base"><i class="fab fa-whatsapp"></i> Tanya Info</a>
+            </div>
+            <div class="float-cards-row" style="margin-top:44px;">
+              <div class="float-card">
+                <div class="float-icon" style="background:rgba(255,191,0,0.25);"><i class="fas fa-tag" style="color:#FFBF00;"></i></div>
+                <div><div class="font-semibold text-white text-sm">Harga Terjangkau</div><div class="text-white/65 text-xs">Sewa lapak spesial</div></div>
+              </div>
+              <div class="float-card">
+                <div class="float-icon" style="background:rgba(70,114,53,0.35);"><i class="fas fa-handshake" style="color:#a8e0a0;"></i></div>
+                <div><div class="font-semibold text-white text-sm">Komunitas Solid</div><div class="text-white/65 text-xs">Support sesama UMKM</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <button id="hero-prev" class="hero-nav-btn hero-nav-prev" aria-label="Slide sebelumnya">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="hero-next" class="hero-nav-btn hero-nav-next" aria-label="Slide berikutnya">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Dots -->
+      <div class="slide-indicator" role="tablist" aria-label="Slide navigator">
+        <button class="slide-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="slide-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="slide-dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="slide-dot" data-index="3" aria-label="Slide 4"></button>
+        <button class="slide-dot" data-index="4" aria-label="Slide 5"></button>
+      </div>
+
+   
     </section>
 
 
+    <!-- ==================== ABOUT ==================== -->
+    <section id="tentang" class="section-padding bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-
-
-
-    <section class="section" id="kontak">
-        <div class="section-head">
-            <!-- <div class="section-icon"><span class="svg-fill-jazzberry-jam svg-content" data-svg="./assets/images/svg/title-rasberry.svg"></span></div> -->
-            <div class="section-head-content">
-                <h2 class="display-3">KONTAK</h2>
-                <p class="section-text">Hubungi pengelola untuk informasi dan layanan</p>
+          <!-- Image column -->
+          <div class="reveal-left">
+            <div class="about-img-wrapper">
+              <img src="assets/images/hero/1.webp" alt="Basecamp Cemara - Ruang Kreatif Papua" class="w-full object-cover" style="height:360px;" />
             </div>
-        </div>
-        <div class="container">
-            <div class="row"></div>
-            <div class="entity">
-                <div class="cols-lg row">
-                    <div class="col-12 col-xl">
-                        <div class="frame-block p-2">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.7342203956446!2d140.61124999999998!3d-2.5926644000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686cf500513f9227%3A0xc3b31b2719de7515!2sBasecamp%20Cemara!5e0!3m2!1sid!2sid!4v1757514911426!5m2!1sid!2sid"
-                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-3 pt-xl-3">
-                        <div class="cols-sm row">
+           
+          </div>
 
-                            <div class="col-md-6 col-lg-3 col-xl-12">
-                                <div class="entity-record short">
-                                    <div class="entity-record-title">Alamat :</div>
-                                    <div class="entity-record-value"> Jl. Raya Waena, Asei Kecil, Kec. Sentani Tim.,
-                                        Kabupaten Jayapura, Papua</div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 col-xl-12">
-                                <div class="entity-record short">
-                                    <div class="entity-record-title">Sosial Media</div>
-                                    <div class="entity-record-value">
-                                        <div class="entity-socials">
-                                            <a class="content-link" target="_blank"
-                                                href="https://share.google/WdZnrRoM7pq9C46WA"><i
-                                                    class="fab fa-google-plus-g" aria-hidden="true"></i>
-                                                <a class="content-link" target="_blank"
-                                                    href="https://www.instagram.com/basecamp_cemara"><i
-                                                        class="fab fa-instagram" aria-hidden="true"></i>
-                                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <!-- Text column -->
+          <div class="reveal-right">
+            <div class="section-badge mb-5"><i class="fas fa-leaf" style="font-size:0.65rem;"></i> Tentang Kami</div>
+            <h2 class="text-3xl lg:text-4xl font-bold mb-5" style="color:#283F24;line-height:1.2;">
+              Basecamp Cemara -<br>Ruang Berkembang untuk Papua
+            </h2>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">
+              Basecamp Cemara adalah ruang kreatif dan komunitas yang berdiri di penggiran Danau Sentani, Kabupaten Jayapura, Papua. Kami hadir sebagai wadah bagi pelaku UMKM lokal, pecinta penggiran Danau Sentani, dan komunitas Rasta Kribo Papua untuk tumbuh dan berkembang bersama.
+            </p>
+            <p class="text-gray-500 text-sm leading-relaxed mb-8">
+              Kami percaya bahwa kebersamaan, kreativitas, dan semangat lokal adalah kunci untuk memajukan ekonomi dan budaya Papua. Setiap lapak, setiap kopi, setiap kegiatan di sini adalah bagian dari perjalanan kita bersama.
+            </p>
+
+            <div class="mb-8">
+              <div class="info-row">
+                <div class="info-icon" style="background:rgba(255,191,0,0.13);"><i class="fas fa-map-marker-alt" style="color:#FFBF00;font-size:0.9rem;"></i></div>
+                <div>
+                  <div class="font-semibold text-sm mb-1" style="color:#283F24;">Lokasi</div>
+                  <div class="text-sm text-gray-500">Jl. Raya Waena, Asei Kecil, Kec. Sentani Tim., Kab. Jayapura, Papua</div>
                 </div>
+              </div>
+              <div class="info-row">
+                <div class="info-icon" style="background:rgba(70,114,53,0.12);"><i class="fas fa-clock" style="color:#467235;font-size:0.9rem;"></i></div>
+                <div>
+                  <div class="font-semibold text-sm mb-1" style="color:#283F24;">Jam Operasional</div>
+                  <div class="text-sm text-gray-500">Setiap hari, 08.00 – 22.00 WIT</div>
+                </div>
+              </div>
+              <div class="info-row" style="margin-bottom:0;">
+                <div class="info-icon" style="background:rgba(40,63,36,0.08);"><i class="fab fa-instagram" style="color:#283F24;font-size:0.9rem;"></i></div>
+                <div>
+                  <div class="font-semibold text-sm mb-1" style="color:#283F24;">Instagram</div>
+                  <div class="text-sm text-gray-500">@basecamp_cemara</div>
+                </div>
+              </div>
             </div>
+
+            <div class="flex flex-wrap gap-3">
+              <a href="#kontak"  class="btn-primary"><i class="fas fa-phone"></i> Hubungi Kami</a>
+              <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="btn-secondary"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <div class="scroll-top"><i class="fas fa-long-arrow-alt-up"></i></div>
-    <footer class="white-curve-before curve-before-80 page-footer footer-view-links section-white-text">
-        <div class="overflow-back bg-vegetables-pattern-white opacity-3"></div>
-        <div class="footer-body">
-            <div class="container">
-                <nav class="footer-navbar">
-                    <div class="grid row text-center">
-                        <div class="col-md-12 col-lg-12"><a class="navbar-brand" href="#!"><span
-                                    class="logo-element-line"><span class="logo-icon"><span
-                                            class="svg-content svg-fill-theme"></span></span><span
-                                        class="logo-text">Basecamp Cemara</span></span></a>
-                            <p class="footer-text">Tempat UMKM dan Camping - Basecamp Komunitas Rasta Kribo Papua
 
-                        </div>
-
-
-                    </div>
-                </nav>
-            </div>
+    <!-- ==================== FEATURES ==================== -->
+    <section class="section-padding bg-pattern  bg-pattern">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14 reveal">
+          <div class="section-badge mb-4"><i class="fas fa-bolt" style="font-size:0.65rem;"></i> Fasilitas &amp; Layanan</div>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color:#283F24;">Semua Yang Anda Butuhkan</h2>
+          <p class="text-gray-500 text-sm max-w-xl mx-auto">Kami menyediakan berbagai fasilitas dan layanan untuk mendukung UMKM lokal, komunitas, dan pengalaman di pinggiran Danau Sentani yang tak terlupakan.</p>
         </div>
-        <div class="footer-copy">
-            <div class="container">Copyright &copy; 2025 <strong>Basecamp Cemara</strong>
-                <p>Developted by <a href="https://samuelbosawer.github.io" class="fw-bolder">Samuel Bosawer</a></p>
-            </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <article class="feature-card reveal delay-1">
+            <div class="feature-icon" style="background:rgba(255,191,0,0.12);"><i class="fas fa-store" style="color:#FFBF00;"></i></div>
+            <h3 class="text-base font-bold mb-2" style="color:#283F24;">Ruang UMKM</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Lapak usaha nyaman dan terjangkau untuk pelaku UMKM lokal Papua agar produk mereka lebih dikenal luas.</p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <div class="feature-icon" style="background:rgba(70,114,53,0.12);"><i class="fas fa-campground" style="color:#467235;"></i></div>
+            <h3 class="text-base font-bold mb-2" style="color:#283F24;">Area Camping</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Area camping yang asri di pinggiran Danau Sentani. Nikmati bintang malam dan kebersamaan bersama komunitas.</p>
+          </article>
+
+          <article class="feature-card reveal delay-3">
+            <div class="feature-icon" style="background:rgba(40,63,36,0.08);"><i class="fas fa-users" style="color:#283F24;"></i></div>
+            <h3 class="text-base font-bold mb-2" style="color:#283F24;">Komunitas Aktif</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Bergabunglah dengan komunitas Rasta Kribo Papua - jaringan anak muda kreatif, inovatif, dan penuh semangat.</p>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <div class="feature-icon" style="background:rgba(255,191,0,0.12);"><i class="fas fa-mug-hot" style="color:#FFBF00;"></i></div>
+            <h3 class="text-base font-bold mb-2" style="color:#283F24;">Kopi Papua</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Nikmati kopi asli Papua yang disajikan langsung, sambil menikmati keindahan panorama Danau Sentani.</p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <div class="feature-icon" style="background:rgba(70,114,53,0.12);"><i class="fas fa-calendar-check" style="color:#467235;"></i></div>
+            <h3 class="text-base font-bold mb-2" style="color:#283F24;">Sewa Tempat Event</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Gelar seminar, workshop, gathering, atau festival budaya di tempat luas bersuasana pinggiran Danau Sentani yang terbuka.</p>
+          </article>
+
+          <article class="feature-card reveal delay-3">
+            <div class="feature-icon" style="background:rgba(40,63,36,0.08);"><i class="fas fa-utensils" style="color:#283F24;"></i></div>
+            <h3 class="text-base font-bold mb-2" style="color:#283F24;">Kuliner Lokal</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Jajaki cita rasa autentik Papua - sagu bakar, kopi Papua, dan berbagai kuliner khas yang menggugah selera.</p>
+          </article>
+
         </div>
-    </footer>
-    <!-- jQuery library -->
-    <script src="./assets/jquery/jquery-3.3.1.js"></script>
-    <!-- Bootstrap -->
-    <script src="./assets/bootstrap/js/bootstrap.js"></script>
-    <!-- Shuffle -->
-    <script src="./assets/shuffle/shuffle.min.js"></script>
-    <!-- Waypoints -->
-    <script src="./assets/waypoints/jquery.waypoints.min.js"></script>
-    <!-- Slick carousel -->
-    <script src="./assets/slick/slick.min.js"></script>
-    <!-- JavaScript Cookie -->
-    <script src="./assets/js-cookie/js.cookie.js" type="text/javascript"></script>
-    <!-- Google maps styles -->
-    <script src="./assets/js/gmap/silver.js"></script>
-    <!-- Inits product scripts -->
-    <script src="./assets/js/script.js"></script>
-    <!-- *** [START] REQUIRED JS FILES *** -->
-    <script src="./assets/wa-web/plugin/components/jquery/jquery-1.9.0.min.js"></script>
-    <script src="./assets/wa-web/plugin/components/moment/moment.min.js"></script>
-    <script src="./assets/wa-web/plugin/components/moment/moment-timezone-with-data.min.js"></script>
-    <script src="./assets/wa-web/plugin/czm-chat-support.min.js"></script>
-    <script>
-
-        $('#example').czmChatSupport({
-
-            /* Button Settings */
-            button: {
-                position: "left", /* left, right or false. "position:false" does not pin to the left or right */
-                style: 3, /* Button style. Number between 1 and 7 */
-                src: '<i class="fab fa-whatsapp"></i>', /* Image, Icon or SVG */
-                backgroundColor: "#10c379", /* Html color code */
-                effect: false, /* Button effect. Number between 1 and 7 */
-                notificationNumber: "2", /* Custom text or false. To remove, (notificationNumber:false) */
-                speechBubble: false, /* To remove, (speechBubble:false) */
-                pulseEffect: false, /* To remove, (pulseEffect:false) */
-                text: { /* For Button style larger than 1 */
-                    title: "Hub Via Whatsapp", /* Writing is required */
-                    description: "Mon-Sat: 10:00/22:00", /* To remove, (description:false) */
-                    online: "Sedang Aktif", /* To remove, (online:false) */
-                    offline: "Kami Akan Aktif Lagi" /* To remove, (offline:false) */
-                }
-            },
-
-            /* Popup Settings */
-            popup: {
-                automaticOpen: false, /* true or false (Open popup automatically when the page is loaded) */
-                outsideClickClosePopup: true, /* true or false (Clicking anywhere on the page will close the popup) */
-                effect: 1, /* Popup opening effect. Number between 1 and 15 */
-                header: {
-                    backgroundColor: "#10c379", /* Html color code */
-                    title: "Pengelola", /* Writing is required */
-                    description: "Untuk informasi lebih lanjut bisa hubungi kami " /* To remove, (description:false) */
-                },
-
-                /* Representative Settings */
-                persons: [
+      </div>
+    </section>
 
 
-                    {
-                        avatar: {
-                            src: '<i class="fab fa-whatsapp"></i>', /* Image, Icon or SVG */
-                            backgroundColor: "#10c379", /* Html color code */
-                            onlineCircle: true /* Avatar online circle. To remove, (onlineCircle:false) */
-                        },
-                        text: {
-                            title: "Thedy Pekei", /* Writing is required */
-                            description: false,
-                            online: false, /* To remove, (online:false) */
-                            offline: false /* To remove, (offline:false) */
-                        },
-                        link: {
-                            desktop: "https://web.whatsapp.com/send?phone=6282115151372&text=Hallo%20pengelola%20Basecamp%20Cemara", /* Writing is required */
-                            mobile: "https://wa.me/6282115151372/?text=Hallo%20pengelola%20Basecamp%20Cemara" /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
+    <!-- ==================== UMKM ==================== -->
+    <section id="umkm" class="section-padding bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14 reveal">
+          <div class="section-badge mb-4"><i class="fas fa-store" style="font-size:0.65rem;"></i> Mitra UMKM</div>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color:#283F24;">UMKM di Basecamp Cemara</h2>
+          <p class="text-gray-500 text-sm max-w-xl mx-auto">Daftar UMKM lokal Papua yang berjualan dan berkembang bersama di Basecamp Cemara.</p>
+        </div>
 
-                        },
-                        onlineDay: {
-                            /* Change the day you are offline like this. (sunday:false) */
-                            sunday: "00:00-23:59",
-                            monday: "00:00-23:59",
-                            tuesday: "00:00-23:59",
-                            wednesday: "00:00-23:59",
-                            thursday: "00:00-23:59",
-                            friday: "00:00-23:59",
-                            saturday: "00:00-23:59"
-                        }
-                    },
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 
-                    /* Copy for more representatives [::Start Copy::] */
-                    {
-                        avatar: {
-                            src: '<i class="fab fa-whatsapp"></i>', /* Image, Icon or SVG */
-                            backgroundColor: "#10c379", /* Html color code */
-                            onlineCircle: true /* Avatar online circle. To remove, (onlineCircle:false) */
-                        },
-                        text: {
-                            title: "Jeremy Ohee", /* Writing is required */
-                            description: false,
-                            online: false, /* To remove, (online:false) */
-                            offline: false /* To remove, (offline:false) */
-                        },
-                        link: {
-                            desktop: "https://web.whatsapp.com/send?phone=6282198715675&text=Hallo%20pengelola%20Basecamp%20Cemara", /* Writing is required */
-                            mobile: "https://wa.me/6282198715675/?text=Hallo%20pengelola%20Basecamp%20Cemara" /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
+          <!-- Sabar Samarasta -->
+          <article class="umkm-card reveal delay-1">
+            <div class="umkm-img-wrap">
+              <img src="assets/images/sabar-samarasta.png" alt="Sabar Samarasta - Sagu Bakar Papua" loading="lazy" />
+              <div class="umkm-overlay">
+                <a href="kedai.html?id=sabar-samarasta" class="umkm-eye-btn" aria-label="Lihat detail Sabar Samarasta"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="tag-pill mb-3 inline-flex" style="background:rgba(70,114,53,0.1);color:#467235;">Kuliner Papua</span>
+              <h3 class="text-lg font-bold mb-2" style="color:#283F24;">Sabar Samarasta</h3>
+              <p class="text-gray-500 text-sm mb-5 leading-relaxed">Kami menjual sagu bakar dan jajanan olahan sagu khas Papua yang lezat dan autentik.</p>
+              <div class="flex gap-3">
+                <a href="https://wa.me/6282115151372/?text=Hallo%20pengelola%20Sabar%20Samarasta" target="_blank" rel="noopener"
+                   class="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-90" style="background:#25D366;">
+                  <i class="fab fa-whatsapp mr-1"></i>WhatsApp
+                </a>
+                <a href="kedai.html?id=sabar-samarasta"
+                   class="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold transition-all" style="background:#FFBF00;color:#283F24;">
+                  Detail
+                </a>
+              </div>
+            </div>
+          </article>
 
-                        },
-                        onlineDay: {
-                            /* Change the day you are offline like this. (sunday:false) */
-                            sunday: "00:00-23:59",
-                            monday: "00:00-23:59",
-                            tuesday: "00:00-23:59",
-                            wednesday: "00:00-23:59",
-                            thursday: "00:00-23:59",
-                            friday: "00:00-23:59",
-                            saturday: "00:00-23:59"
-                        }
-                    },
-                    /* [::End Copy::] */
+          <!-- Kopi Acem -->
+          <article class="umkm-card reveal delay-2">
+            <div class="umkm-img-wrap">
+              <img src="assets/images/kopi-acem.png" alt="Kopi Acem - Kopi Asli Papua" loading="lazy" />
+              <div class="umkm-overlay">
+                <a href="kedai.html?id=kopi-acem" class="umkm-eye-btn" aria-label="Lihat detail Kopi Acem"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="tag-pill mb-3 inline-flex" style="background:rgba(255,191,0,0.14);color:#8B6900;">Kopi Lokal</span>
+              <h3 class="text-lg font-bold mb-2" style="color:#283F24;">Kopi Acem</h3>
+              <p class="text-gray-500 text-sm mb-5 leading-relaxed">Kami menjual kopi asli Papua yang diolah dengan cinta sambil menikmati indahnya Danau Sentani.</p>
+              <div class="flex gap-3">
+                <a href="https://wa.me/6281344552766/?text=Hallo%20pengelola%20Kopi%20Acem" target="_blank" rel="noopener"
+                   class="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-90" style="background:#25D366;">
+                  <i class="fab fa-whatsapp mr-1"></i>WhatsApp
+                </a>
+                <a href="kedai.html?id=kopi-acem"
+                   class="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold transition-all" style="background:#FFBF00;color:#283F24;">
+                  Detail
+                </a>
+              </div>
+            </div>
+          </article>
 
-                    /* Copy for more representatives [::Start Copy::] */
+          <!-- Mae Coffe
+          <article class="umkm-card reveal delay-3">
+            <div class="umkm-img-wrap">
+              <img src="assets/images/mae-coffe.png" alt="Mae Coffe - Kopi Spesial &amp; Minuman Kekinian" loading="lazy" />
+              <div class="umkm-overlay">
+                <a href="kedai.html?id=mae-coffe" class="umkm-eye-btn" aria-label="Lihat detail Mae Coffe"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="tag-pill mb-3 inline-flex" style="background:rgba(40,63,36,0.08);color:#283F24;">Coffee &amp; Drinks</span>
+              <h3 class="text-lg font-bold mb-2" style="color:#283F24;">Mae Coffe</h3>
+              <p class="text-gray-500 text-sm mb-5 leading-relaxed">Kami menjual kopi spesial dan minuman kekinian dengan cita rasa unik yang menggugah selera.</p>
+              <div class="flex gap-3">
+                <a href="https://wa.me/6282115151372/?text=Hallo%20pengelola%20Mae%20Coffe" target="_blank" rel="noopener"
+                   class="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold text-white transition-opacity hover:opacity-90" style="background:#25D366;">
+                  <i class="fab fa-whatsapp mr-1"></i>WhatsApp
+                </a>
+                <a href="kedai.html?id=mae-coffe"
+                   class="flex-1 text-center py-2.5 rounded-xl text-sm font-semibold transition-all" style="background:#FFBF00;color:#283F24;">
+                  Detail
+                </a>
+              </div>
+            </div>
+          </article> -->
 
-                    /* [::End Copy::] */
+        </div>
+      </div>
+    </section>
 
-                ]
-            },
 
-            /* Other Settings */
-            sound: false, /* true (default sound), false or custom sound. Custom sound example, (sound:'assets/sound/notification.mp3') */
-            changeBrowserTitle: false, /* Custom text or false. To remove, (changeBrowserTitle:false) */
-            cookie: false, /* It does not show the speech bubble, notification number, pulse effect and automatic open popup again for the specified time. For example, do not show for 1 hour, (cookie:1) or to remove, (cookie:false) */
-        });
+    <!-- ==================== SEWA TEMPAT ==================== -->
+    <section id="sewa" class="section-padding bg-pattern">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14 reveal">
+          <div class="section-badge mb-4"><i class="fas fa-home" style="font-size:0.65rem;"></i> Penyewaan</div>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color:#283F24;">Sewa Tempat di Basecamp Cemara</h2>
+          <p class="text-gray-600 text-sm max-w-xl mx-auto">Tersedia dua pilihan penyewaan untuk mendukung acara dan bisnis Anda di Sentani, Jayapura.</p>
+        </div>
 
-    </script>
-    <!-- *** [END] REQUIRED JS FILES *** -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+          <!-- Event Rental -->
+          <div class="rental-card reveal delay-1">
+            <div class="rental-card-head" style="background:linear-gradient(135deg,#283F24,#467235);">
+              <div class="flex items-center gap-4 mb-5">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,191,0,0.18);">
+                  <i class="fas fa-calendar-check text-2xl" style="color:#FFBF00;"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white">Sewa Tempat Event</h3>
+                  <p class="text-white/60 text-sm">Untuk Acara &amp; Kegiatan</p>
+                </div>
+              </div>
+              <div class="glass rounded-2xl p-4">
+                <ul class="text-white/85 text-sm flex flex-col gap-2.5">
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="color:#FFBF00;font-size:0.7rem;"></i> Seminar &amp; Workshop</li>
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="color:#FFBF00;font-size:0.7rem;"></i> Gathering &amp; Komunitas</li>
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="color:#FFBF00;font-size:0.7rem;"></i> Festival Budaya Papua</li>
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="color:#FFBF00;font-size:0.7rem;"></i> Pameran &amp; Promosi Produk</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rental-card-body">
+              <div class="rental-feature-grid">
+                <div class="rental-feature-item" style="background:rgba(40,63,36,0.05);">
+                  <i class="fas fa-users text-xl mb-2" style="color:#467235;display:block;"></i>
+                  <div class="font-bold text-sm" style="color:#283F24;">200+ Orang</div>
+                  <div class="text-xs text-gray-400">Kapasitas</div>
+                </div>
+                <div class="rental-feature-item" style="background:rgba(40,63,36,0.05);">
+                  <i class="fas fa-plug text-xl mb-2" style="color:#467235;display:block;"></i>
+                  <div class="font-bold text-sm" style="color:#283F24;">Tersedia</div>
+                  <div class="text-xs text-gray-400">Listrik &amp; Toilet</div>
+                </div>
+              </div>
+              <a href="https://wa.me/6282115151372/?text=Hallo%20saya%20ingin%20informasi%20sewa%20tempat%20event%20di%20Basecamp%20Cemara"
+                 target="_blank" rel="noopener"
+                 class="btn-primary w-full justify-center" style="font-size:0.9rem;">
+                <i class="fab fa-whatsapp"></i> Hubungi untuk Booking
+              </a>
+            </div>
+          </div>
+
+          <!-- UMKM Lapak Rental -->
+          <div class="rental-card reveal delay-2">
+            <div class="rental-card-head" style="background:linear-gradient(135deg,#FFBF00,#f0b800);">
+              <div class="flex items-center gap-4 mb-5">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0" style="background:rgba(40,63,36,0.18);">
+                  <i class="fas fa-store text-2xl" style="color:#283F24;"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold" style="color:#283F24;">Sewa Lapak UMKM</h3>
+                  <p class="text-sm" style="color:rgba(40,63,36,0.65);">Untuk Pelaku Usaha Lokal</p>
+                </div>
+              </div>
+              <div class="rounded-2xl p-4" style="background:rgba(40,63,36,0.14);">
+                <ul class="text-sm flex flex-col gap-2.5" style="color:#283F24;">
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="font-size:0.7rem;"></i> Lapak permanen &amp; semi-permanen</li>
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="font-size:0.7rem;"></i> Lokasi strategis</li>
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="font-size:0.7rem;"></i> Komunitas UMKM yang solid</li>
+                  <li class="flex items-center gap-2"><i class="fas fa-check" style="font-size:0.7rem;"></i> Dukungan promosi bersama</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rental-card-body">
+              <div class="rental-feature-grid">
+                <div class="rental-feature-item" style="background:rgba(255,191,0,0.1);">
+                  <i class="fas fa-tag text-xl mb-2" style="color:#FFBF00;display:block;"></i>
+                  <div class="font-bold text-sm" style="color:#283F24;">Terjangkau</div>
+                  <div class="text-xs text-gray-400">Harga Sewa</div>
+                </div>
+                <div class="rental-feature-item" style="background:rgba(255,191,0,0.1);">
+                  <i class="fas fa-handshake text-xl mb-2" style="color:#FFBF00;display:block;"></i>
+                  <div class="font-bold text-sm" style="color:#283F24;">Fleksibel</div>
+                  <div class="text-xs text-gray-400">Jangka Waktu</div>
+                </div>
+              </div>
+              <a href="https://wa.me/6282115151372/?text=Hallo%20saya%20ingin%20informasi%20sewa%20lapak%20UMKM%20di%20Basecamp%20Cemara"
+                 target="_blank" rel="noopener"
+                 class="btn-dark w-full justify-center" style="font-size:0.9rem;">
+                <i class="fab fa-whatsapp"></i> Daftar Sekarang
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== GALLERY ==================== -->
+    <section id="galeri" class="section-padding bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14 reveal">
+          <div class="section-badge mb-4"><i class="fas fa-images" style="font-size:0.65rem;"></i> Galeri</div>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color:#283F24;">Momen di Basecamp Cemara</h2>
+          <p class="text-gray-500 text-sm max-w-xl mx-auto">Setiap sudut Basecamp Cemara menyimpan cerita. Lihat momen-momen berkesan yang terjadi di sini.</p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-1" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/1.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-2" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/2.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-3" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/3.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-1" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/4.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-2" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/5.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-3" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/6.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-4" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/7.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+           <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="gallery-item reveal delay-4" style="aspect-ratio:4/5;">
+            <img src="assets/images/gallery/8.webp" alt="Basecamp Cemara" loading="lazy" />
+            <div class="gallery-overlay gallery-ig-overlay"><i class="fab fa-instagram"></i></div>
+          </a>
+
+        </div>
+
+        <div class="text-center mt-10 reveal">
+          <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fab fa-instagram"></i> Lihat Lebih Banyak di Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="section-padding" style="background:linear-gradient(135deg,#283F24 0%,#3d5f33 55%,#467235 100%);">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14 reveal">
+          <div class="section-badge gold mb-4 mx-auto"><i class="fas fa-star" style="font-size:0.65rem;"></i> Testimoni</div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Apa Kata Mereka?</h2>
+          <p class="text-white/55 text-sm max-w-md mx-auto">Pengalaman nyata dari pengunjung dan mitra UMKM Basecamp Cemara.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="testimonial-card reveal delay-1">
+            <div class="flex gap-1 mb-4" style="color:#FFBF00;">
+              <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+              <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+            </div>
+            <p class="text-white/80 text-sm leading-relaxed mb-6">
+              "Basecamp Cemara benar-benar surga bagi UMKM lokal. Saya bisa berjualan kopi Papua di sini dan bertemu banyak pelanggan setia. Tempatnya nyaman dan sangat mendukung kreativitas."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="t-avatar" style="background:rgba(255,191,0,0.28);color:#FFBF00;">T</div>
+              <div>
+                <div class="text-white font-semibold text-sm">Thedy Pekei</div>
+                <div class="text-white/45 text-xs">Pengelola Basecamp</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-2">
+            <div class="flex gap-1 mb-4" style="color:#FFBF00;">
+              <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+              <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+            </div>
+            <p class="text-white/80 text-sm leading-relaxed mb-6">
+              "Camping di sini pengalaman yang tak terlupakan! Alam Papua yang indah, udara segar, dan komunitas yang hangat. Basecamp Cemara wajib dikunjungi saat ke Sentani Jayapura."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="t-avatar" style="background:rgba(70,114,53,0.45);color:#a8e0a0;">J</div>
+              <div>
+                <div class="text-white font-semibold text-sm">Jeremy Ohee</div>
+                <div class="text-white/45 text-xs">Komunitas Rasta Kribo</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-3">
+            <div class="flex gap-1 mb-4" style="color:#FFBF00;">
+              <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+              <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+            </div>
+            <p class="text-white/80 text-sm leading-relaxed mb-6">
+              "Sagu bakar dan kopi Papua di sini benar-benar autentik. Pelayanannya ramah, tempatnya bersih, dan pemandangan Danau Sentani dari sini memukau. Pasti akan kembali lagi!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="t-avatar" style="background:rgba(255,191,0,0.28);color:#FFBF00;">R</div>
+              <div>
+                <div class="text-white font-semibold text-sm">Rasta Kribo</div>
+                <div class="text-white/45 text-xs">Pengunjung Setia</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section-padding bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14 reveal">
+          <div class="section-badge mb-4"><i class="fas fa-question-circle" style="font-size:0.65rem;"></i> FAQ</div>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color:#283F24;">Pertanyaan yang Sering Diajukan</h2>
+          <p class="text-gray-500 text-sm max-w-md mx-auto">Temukan jawaban untuk pertanyaan umum seputar Basecamp Cemara.</p>
+        </div>
+
+        <div class="reveal">
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-question-text">Dimana lokasi Basecamp Cemara?</span>
+              <div class="faq-toggle-icon" aria-hidden="true"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Basecamp Cemara berlokasi di Jl. Raya Waena, Asei Kecil, Kec. Sentani Timur, Kabupaten Jayapura, Papua. Gunakan Google Maps dengan kata kunci "Basecamp Cemara" untuk navigasi ke lokasi kami.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-question-text">Apa jam operasional Basecamp Cemara?</span>
+              <div class="faq-toggle-icon" aria-hidden="true"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Kami buka setiap hari dari pukul 08.00 hingga 22.00 WIT. Untuk kegiatan camping semalam, silakan hubungi pengelola terlebih dahulu untuk pengaturan khusus.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-question-text">Bagaimana cara sewa tempat untuk event?</span>
+              <div class="faq-toggle-icon" aria-hidden="true"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Untuk sewa tempat event, hubungi pengelola langsung via WhatsApp: Thedy Pekei (0821-1515-1372) atau Jeremy Ohee (0821-9871-5675). Kami akan membantu mengatur kebutuhan acara Anda sesuai kapasitas dan jadwal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-question-text">Bagaimana cara mendaftar sebagai UMKM?</span>
+              <div class="faq-toggle-icon" aria-hidden="true"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Untuk mendaftar sebagai UMKM di Basecamp Cemara, hubungi pengelola via WhatsApp untuk informasi ketersediaan lapak, persyaratan, dan harga sewa. Kami mengutamakan UMKM lokal Papua.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-question-text">Fasilitas apa saja yang tersedia?</span>
+              <div class="faq-toggle-icon" aria-hidden="true"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Tersedia area UMKM, lapak kuliner, area camping, WiFi, listrik, parkir kendaraan, serta suasana alam terbuka yang nyaman. Kuliner khas Papua seperti sagu bakar dan kopi Papua tersedia setiap hari.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-question-text">Apakah tersedia parkir di Basecamp?</span>
+              <div class="faq-toggle-icon" aria-hidden="true"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Ya, kami menyediakan area parkir yang cukup luas untuk kendaraan roda dua maupun roda empat tanpa biaya tambahan.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== CTA ==================== -->
+    <section class="cta-bg section-padding">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10 reveal">
+        <div class="section-badge gold mb-6 mx-auto"><i class="fas fa-rocket" style="font-size:0.65rem;"></i> Bergabung Sekarang</div>
+        <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+          Siap Bergabung dengan<br>
+          <span style="color:#FFBF00;">Basecamp Cemara?</span>
+        </h2>
+        <p class="text-white/70 text-base mb-10 max-w-xl mx-auto">
+          Jadikan Basecamp Cemara bagian dari perjalanan Anda - sebagai pelaku UMKM, pengunjung, atau bagian dari komunitas Rasta Kribo Papua.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://wa.me/6282115151372/?text=Hallo%20pengelola%20Basecamp%20Cemara%2C%20saya%20ingin%20bergabung"
+             target="_blank" rel="noopener"
+             class="btn-primary" style="padding:14px 32px;font-size:1rem;">
+            <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+          </a>
+          <a href="https://maps.app.goo.gl/h7ZHPDK3P1Twgz686" target="_blank" rel="noopener"
+             class="btn-outline-white" style="padding:14px 32px;font-size:1rem;">
+            <i class="fas fa-map-marker-alt"></i> Kunjungi Kami
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="kontak" class="section-padding bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14 reveal">
+          <div class="section-badge mb-4"><i class="fas fa-envelope" style="font-size:0.65rem;"></i> Kontak</div>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color:#283F24;">Temukan Kami</h2>
+          <p class="text-gray-500 text-sm max-w-md mx-auto">Hubungi pengelola atau kunjungi langsung Basecamp Cemara di Sentani, Papua.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 reveal">
+
+          <!-- Map -->
+          <div class="lg:col-span-2">
+            <div class="map-wrap">
+              <iframe
+                title="Lokasi Basecamp Cemara"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.7342203956446!2d140.61124999999998!3d-2.5926644000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686cf500513f9227%3A0xc3b31b2719de7515!2sBasecamp%20Cemara!5e0!3m2!1sid!2sid!4v1757514911426!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Info cards -->
+          <div class="flex flex-col gap-4">
+
+            <div class="contact-info-card">
+              <div class="w-11 h-11 rounded-2xl flex items-center justify-center mb-4" style="background:rgba(255,191,0,0.14);">
+                <i class="fas fa-map-marker-alt" style="color:#FFBF00;"></i>
+              </div>
+              <h4 class="font-bold text-sm mb-2" style="color:#283F24;">Alamat</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Jl. Raya Waena, Asei Kecil, Kec. Sentani Tim., Kabupaten Jayapura, Papua</p>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="w-11 h-11 rounded-2xl flex items-center justify-center mb-4" style="background:rgba(37,211,102,0.12);">
+                <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+              </div>
+              <h4 class="font-bold text-sm mb-2" style="color:#283F24;">WhatsApp</h4>
+              <a href="https://wa.me/6282115151372" target="_blank" rel="noopener" class="text-gray-500 text-sm hover:text-accent block transition-colors">Thedy Pekei - 0821-1515-1372</a>
+              <a href="https://wa.me/6282198715675" target="_blank" rel="noopener" class="text-gray-500 text-sm hover:text-accent block transition-colors mt-1">Jeremy Ohee - 0821-9871-5675</a>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="w-11 h-11 rounded-2xl flex items-center justify-center mb-4" style="background:rgba(40,63,36,0.08);">
+                <i class="fas fa-share-alt" style="color:#283F24;"></i>
+              </div>
+              <h4 class="font-bold text-sm mb-3" style="color:#283F24;">Sosial Media</h4>
+              <div class="flex gap-3">
+                <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener"
+                   class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-sm transition-all hover:scale-110"
+                   style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);"
+                   aria-label="Instagram Basecamp Cemara">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://share.google/WdZnrRoM7pq9C46WA" target="_blank" rel="noopener"
+                   class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-sm transition-all hover:scale-110"
+                   style="background:#EA4335;"
+                   aria-label="Google Maps Basecamp Cemara">
+                  <i class="fab fa-google"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer style="background:#283F24;" aria-label="Footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <img src="assets/images/logo-3.webp" alt="Basecamp Cemara" style="height:56px;margin-bottom:16px;" />
+          <p class="text-sm leading-relaxed mb-5 max-w-sm" style="color:rgba(255,255,255,0.52);">
+            Basecamp Cemara - ruang kreatif bagi UMKM lokal, area camping, dan komunitas Rasta Kribo Papua di Sentani, Kabupaten Jayapura.
+          </p>
+          <div class="flex gap-3">
+            <a href="https://www.instagram.com/basecamp_cemara" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6282115151372" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://share.google/WdZnrRoM7pq9C46WA" target="_blank" rel="noopener" class="social-btn" aria-label="Google"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-5">Menu Cepat</h4>
+          <nav aria-label="Footer navigation">
+            <a href="#beranda"  class="footer-link">Beranda</a>
+            <a href="#tentang"  class="footer-link">Tentang Kami</a>
+            <a href="#umkm"    class="footer-link">UMKM</a>
+            <a href="#sewa"    class="footer-link">Sewa Tempat</a>
+            <a href="#galeri"  class="footer-link">Galeri</a>
+            <a href="#kontak"  class="footer-link">Kontak</a>
+          </nav>
+        </div>
+
+        <!-- UMKM -->
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-5">Mitra UMKM</h4>
+          <a href="kedai.html?id=sabar-samarasta" class="footer-link">Sabar Samarasta</a>
+          <a href="kedai.html?id=kopi-acem"       class="footer-link">Kopi Acem</a>
+          <a href="kedai.html?id=mae-coffe"       class="footer-link">Mae Coffe</a>
+          <a href="#sewa"                         class="footer-link">Daftar UMKM Baru</a>
+        </div>
+
+        <!-- Barcode Ulasan -->
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-5">Beri Ulasan</h4>
+          <a href="https://maps.app.goo.gl/h7ZHPDK3P1Twgz686" target="_blank" rel="noopener" aria-label="Scan barcode untuk memberi ulasan di Google Maps">
+            <img src="assets/images/barcode-loc.png" alt="QR barcode ulasan Google Maps Basecamp Cemara" style="width:110px;height:110px;object-fit:contain;border-radius:10px;background:white;padding:7px;display:block;" />
+          </a>
+          <p class="text-xs mt-3 leading-relaxed" style="color:rgba(255,255,255,0.45);">Scan QR untuk memberi<br>ulasan di Google Maps ⭐</p>
+        </div>
+
+      </div>
+
+      <hr class="divider-wave" />
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-6">
+        <p style="color:rgba(255,255,255,0.35);font-size:0.78rem;">
+          &copy; 2025 <strong style="color:rgba(255,255,255,0.55);">Basecamp Cemara</strong>. All rights reserved.
+        </p>
+        <p style="color:rgba(255,255,255,0.35);font-size:0.78rem;">
+          Developed by
+          <a href="https://samuelbosawer.github.io" target="_blank" rel="noopener"
+             style="color:rgba(255,255,255,0.6);font-weight:600;" class="hover:text-primary transition-colors">
+            Samuel Bosawer
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==================== SCROLL TO TOP ==================== -->
+  <button id="scroll-top" aria-label="Kembali ke atas">
+    <i class="fas fa-arrow-up text-sm"></i>
+  </button>
+
+
+  <!-- ==================== WHATSAPP FLOAT ==================== -->
+  <div id="wa-float" aria-label="Hubungi via WhatsApp">
+    <div class="wa-popup" id="wa-popup" role="dialog" aria-label="Pilih kontak WhatsApp">
+      <div class="wa-popup-header">
+        <div class="font-bold text-white text-sm">Pengelola Basecamp</div>
+        <div class="text-sm mt-0.5" style="color:rgba(255,255,255,0.78);">Untuk informasi lebih lanjut hubungi kami</div>
+      </div>
+      <a href="https://wa.me/6282115151372/?text=Hallo%20pengelola%20Basecamp%20Cemara"
+         target="_blank" rel="noopener" class="wa-contact-item">
+        <div class="wa-avatar"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <div class="font-semibold text-sm" style="color:#1a1a1a;">Thedy Pekei</div>
+          <div class="text-xs text-gray-400">Pengelola Utama</div>
+        </div>
+      </a>
+      <a href="https://wa.me/6282198715675/?text=Hallo%20pengelola%20Basecamp%20Cemara"
+         target="_blank" rel="noopener" class="wa-contact-item">
+        <div class="wa-avatar"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <div class="font-semibold text-sm" style="color:#1a1a1a;">Jeremy Ohee</div>
+          <div class="text-xs text-gray-400">Pengelola</div>
+        </div>
+      </a>
+    </div>
+    <button class="wa-btn" id="wa-toggle" aria-label="Buka WhatsApp">
+      <span class="wa-badge">2</span>
+      <i class="fab fa-whatsapp" id="wa-icon"></i>
+    </button>
+  </div>
+
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
 </body>
-
 </html>
